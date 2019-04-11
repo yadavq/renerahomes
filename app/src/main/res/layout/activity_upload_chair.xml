@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadChair">
+
+    <ImageView
+        android:id="@+id/chair_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="134dp"
+        app:layout_constraintBottom_toTopOf="@+id/chair_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/chair_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="OF CHAIR"
+        android:textColor="@color/textDark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/chair_image"
+        app:layout_constraintStart_toStartOf="@+id/chair_image"
+        app:layout_constraintTop_toTopOf="@+id/chair_image" />
+
+    <ImageView
+        android:id="@+id/chair_addition"
+        android:layout_width="169dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chair_image"
+        app:layout_constraintEnd_toEndOf="@+id/chair_image"
+        app:layout_constraintStart_toStartOf="@+id/chair_image"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+    <ImageButton
+        android:id="@+id/chair_continue"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chair_skip"
+        app:layout_constraintTop_toBottomOf="@+id/chair_image"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/chair_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginStart="16dp"
+        android:text="NEXT"
+        android:textColor="@color/textDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chair_continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chair_image" />
+
+    <ProgressBar
+        android:id="@+id/progressBarChair"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/chair_continue"
+        app:layout_constraintStart_toStartOf="@+id/chair_continue"
+        app:layout_constraintTop_toTopOf="@+id/chair_continue"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

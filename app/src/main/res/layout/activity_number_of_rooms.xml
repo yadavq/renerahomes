@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        tools:context=".LocationAddress">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="473dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/rooms"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-54dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background_main"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:hint="Number Of Rooms"
+                android:inputType="number" />
+
+            <ImageButton
+                android:id="@+id/btn_rooms"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

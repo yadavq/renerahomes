@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfilePage"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="112dp"
+            android:layout_height="122dp"
+            android:layout_marginBottom="49dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/profile_location"
+            app:layout_constraintEnd_toStartOf="@+id/profile_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="37dp"
+            android:text="Hello, Name "
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_photo"
+            app:layout_constraintTop_toTopOf="@+id/profile_photo" />
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Your Location is "
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_photo" />
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:text="Your Phone Number Is "
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_location" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="Your Interest Field"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_phone" />
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:text="UPLOAD Photos "
+            android:textColor="@color/textLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOADED PHOTOS"
+            android:textColor="@color/textDark"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_doorin"
+            android:layout_marginTop="20dp"
+            android:text="Door In Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_doorout"
+            android:layout_marginTop="10dp"
+            android:text="Door Out Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_bed"
+            android:layout_marginTop="10dp"
+            android:text="Bed Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_bedding"
+            android:layout_marginTop="10dp"
+            android:text="Bedding Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_table"
+            android:layout_marginTop="10dp"
+            android:text="Table Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_chair"
+            android:layout_marginTop="10dp"
+            android:text="Chair Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_wardrobe"
+            android:layout_marginTop="10dp"
+            android:text="Almirah Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_bathroom"
+            android:layout_marginTop="10dp"
+            android:text="Bathroom Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_other"
+            android:layout_marginTop="10dp"
+            android:text="Other Image Uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>
